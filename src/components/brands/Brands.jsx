@@ -5,7 +5,6 @@ import brands3 from '../../assets/images/brend3.svg';
 import brands4 from '../../assets/images/brend4.svg';
 import brands5 from '../../assets/images/brend5.svg';
 import brands6 from '../../assets/images/brend6.svg';
-
 const Brands = () => {
     return (
         <div className='brands'>

@@ -17,3 +17,33 @@
     justify-content: center;
 }
 
+@media only screen and (max-width:1150px) {
+    .brands-content {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .brands {
+        padding: 50px 10px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .brands-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .brands {
+        padding: 30px 10px;
+    }
+
+    .brands-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+}
