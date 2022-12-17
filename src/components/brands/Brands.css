@@ -1,0 +1,19 @@
+.brands {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 80px 20px 130px 20px;
+}
+
+.brands-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+.brands-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
