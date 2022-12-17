@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'DMSans-500';
+    src: url('../../assets/fonts/Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans-700';
+    src: url('../../assets/fonts/Bold700.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-500';
+    src: url('../../assets/fonts/Darker-Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-600';
+    src: url('../../assets/fonts/Darker-SemiBold600.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-700';
+    src: url('../../assets/fonts/Darker-Bold700.ttf');
+}
+
+.header {
+    width: 100%;
+    height: auto;
+    background-color: #F7F6F5;
+}
+
+.header-content {
+    max-width: 1440px;
+    padding: 45px 20px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-logo {
+    max-width: 116px;
+    height: 46px;
+    cursor: pointer;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+}
+
+.navbar-list {
+    list-style-type: none;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 30px;
+    color: #000000;
+    font-family: 'DMSans-500';
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navbar-list:hover {
+    transition: .5s;
+    color: tomato;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 47px;
+}
+
+.header-icons {
+    font-size: 28px;
+    cursor: pointer;
+    transition: .5s;
+    color: #161616;
+}
+
+.header-icons:hover,
+.header-menu:hover {
+    transition: .5s;
+    color: tomato;
+}
+
+.header-menu {
+    font-size: 28px;
+    cursor: pointer;
+    transition: .5s;
+    color: #161616;
+    display: none;
+}
+
+@media only screen and (max-width:1024px) {
+
+    .navbar-item,
+    .header-right {
+        gap: 35px;
+    }
+
+    .navbar-list {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .navbar-item {
+        display: none;
+    }
+
+    .header-content {
+        padding: 15px 20px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .header-right {
+        display: none;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    .header-content {
+        padding: 10px 10px;
+    }
+}
