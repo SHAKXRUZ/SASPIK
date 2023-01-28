@@ -1,0 +1,163 @@
+@font-face {
+    font-family: 'DMSans-500';
+    src: url('../../assets/fonts/Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans-700';
+    src: url('../../assets/fonts/Bold700.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-500';
+    src: url('../../assets/fonts/Darker-Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-600';
+    src: url('../../assets/fonts/Darker-SemiBold600.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-700';
+    src: url('../../assets/fonts/Darker-Bold700.ttf');
+}
+
+.cosmetics {
+    width: 100%;
+    margin-bottom: 113px;
+    height: 547px;
+    background-color: #F6F5F1;
+}
+
+.cosmeticsis {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.images {
+    width: 771px;
+    height: 547px;
+}
+
+.cosmetics_title {
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #181817;
+    margin-bottom: 20px;
+}
+
+.cosmetics_text {
+    max-width: 600px;
+    font-family: 'DMSans-500';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.7);
+    margin-bottom: 40px;
+}
+
+.cosmetics_btn {
+    width: 200px;
+    height: 70px;
+    background: #161616;
+    border-radius: 7px;
+    font-family: 'Darker-600';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: skew(-20deg);
+}
+
+@media only screen and (max-width:1250px) {
+    .cosmetics {
+        height: auto;
+        padding: 30px 0px;
+    }
+}
+
+@media only screen and (max-width:1150px) {
+    .cosmetics {
+        padding: 25px 0px;
+    }
+
+    .cosmeticsis {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .images {
+        width: auto;
+        height: auto;
+    }
+
+    .cosmetics_content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cosmetics_btn {
+        width: 200px;
+        height: 70px;
+        background: #161616;
+        border-radius: 7px;
+        font-family: 'Darker-600';
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 34px;
+        color: #FFFFFF;
+        cursor: pointer;
+        transform: skew(-20deg);
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .images {
+        width: 400px;
+    }
+
+    .cosmetics_title {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+
+    .cosmetics_text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .images {
+        width: 250px;
+    }
+
+    .cosmetics_title {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    .cosmetics_text {
+        font-size: 14px;
+    }
+
+    .cosmetics_btn {
+        width: 120px;
+        height: 50px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
