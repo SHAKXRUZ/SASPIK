@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'DMSans-500';
+    src: url('../../assets/fonts/Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans-700';
+    src: url('../../assets/fonts/Bold700.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-500';
+    src: url('../../assets/fonts/Darker-Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-600';
+    src: url('../../assets/fonts/Darker-SemiBold600.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-700';
+    src: url('../../assets/fonts/Darker-Bold700.ttf');
+}
+
+.popular {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.popular_title {
+    font-weight: 400;
+    font-size: 55px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #181817;
+    margin-bottom: 100px;
+}
+
+.popular_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.popular_cards {
+    width: 607px;
+    height: 279px;
+    background: #FFFFFF;
+    box-shadow: 30px 40px 85px rgba(0, 0, 0, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_left {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card_title {
+    width: 254px;
+    height: 70px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #181817;
+}
+
+.card_text {
+    width: 260px;
+    font-family: 'DMSans-500';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.card_btn {
+    width: 156px;
+    height: 56.93px;
+    background: #161616;
+    border-radius: 7px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transform: skew(-20deg);
+    margin-left: 10px;
+}
+
+@media only screen and (max-width:1250px) {
+    .popular_title {
+        text-align: center;
+    }
+
+    .popular_container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .popular_title {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 50px;
+    }
+
+    .popular_container {
+        margin-bottom: 50px;
+    }
+
+    .popular {
+        padding: 0px 10px;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .popular_cards {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card_left {
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .card_title {
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .card_text {
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .popular_img1 {
+        width: 240px;
+    }
+
+    .card_text {
+        font-size: 14px;
+    }
+}
