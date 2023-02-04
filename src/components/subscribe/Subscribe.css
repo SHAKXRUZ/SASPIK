@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'DMSans-500';
+    src: url('../../assets/fonts/Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans-700';
+    src: url('../../assets/fonts/Bold700.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-500';
+    src: url('../../assets/fonts/Darker-Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-600';
+    src: url('../../assets/fonts/Darker-SemiBold600.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-700';
+    src: url('../../assets/fonts/Darker-Bold700.ttf');
+}
+
+.subscribe {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+
+.subscribe_title {
+    font-size: 55px;
+}
+
+.subscribe_text {
+    text-align: center;
+    font-family: 'DMSans-500';
+    width: 545px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 160%;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form_input {
+    width: 471px;
+    height: 90px;
+    border: 1px solid #D1D1D1;
+    border-radius: 15px 0px 0px 15px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    color: #181817;
+    opacity: 0.7;
+    text-indent: 50px;
+    padding: 20px;
+    outline: none;
+}
+
+.form_btn {
+    width: 186px;
+    height: 90px;
+    color: white;
+    background: #161616;
+    border-radius: 0px 15px 15px 0px;
+    cursor: pointer;
+    font-family: 'DMSans-700';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width:768px) {
+    .subscribe {
+        padding: 0px 10px;
+    }
+
+    .subscribe_title {
+        font-size: 30px;
+    }
+
+    .subscribe_text {
+        font-size: 14px;
+    }
+
+    .form_input {
+        width: 400px;
+        height: 70px;
+        font-size: 14px;
+        text-indent: 30px;
+        padding: 15px;
+    }
+
+    .form_btn {
+        width: 150px;
+        height: 70px;
+        font-size: 14px;
+    }
+
+    .subscribe {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .subscribe {
+        gap: 10px;
+    }
+
+    .subscribe_title {
+        font-size: 24px;
+    }
+
+    .subscribe_text {
+        max-width: 280px;
+        font-size: 14px;
+    }
+
+    .form_input {
+        width: 200px;
+        height: 50px;
+        font-size: 12px;
+        text-indent: 10px;
+        padding: 10px;
+    }
+
+    .form_btn {
+        width: 80px;
+        height: 50px;
+        font-size: 10px;
+    }
+
+    .subscribe {
+        margin-bottom: 50px;
+    }
+}
