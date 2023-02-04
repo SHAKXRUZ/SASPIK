@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'DMSans-500';
+    src: url('../../assets/fonts/Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'DMSans-700';
+    src: url('../../assets/fonts/Bold700.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-500';
+    src: url('../../assets/fonts/Darker-Medium500.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-600';
+    src: url('../../assets/fonts/Darker-SemiBold600.ttf');
+}
+
+@font-face {
+    font-family: 'Darker-700';
+    src: url('../../assets/fonts/Darker-Bold700.ttf');
+}
+
+.fot {
+    width: 100%;
+    height: auto;
+    padding: 50px 0px;
+    background: #F7F6F5;
+}
+
+.footer_logo {
+    width: 116px;
+    height: 46px;
+}
+
+.footer {
+    margin: 0 auto;
+    padding: 0px 20px;
+    max-width: 1440px;
+}
+
+.footer_content {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 50px 0px;
+    border-bottom: 2px solid #8F8F8F;
+}
+
+
+.footer_bottom_text {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    font-family: 'Darker-600';
+    color: #0B2626;
+    padding-top: 30px;
+}
+
+.footer_text_card {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.footer_card_title {
+    font-family: 'Darker-700';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 47px;
+    color: #0B2626;
+}
+
+.footer_card_text {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 34px;
+    color: #0B2626;
+    font-family: 'Darker-600';
+    cursor: pointer;
+}
+
+.footer_link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.footer_card_sms,
+.footer_card_phone {
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+}
+
+.footer_link {
+    color: #0B2626;
+    text-decoration: none;
+}
+
+@media only screen and (max-width:768px) {
+    .fot {
+        padding: 25px 0px;
+    }
+
+    .footer {
+        padding: 0px 10px;
+    }
+
+    .footer_content {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 25px 0px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .footer_bottom_text {
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .footer_text_card {
+        gap: 0px;
+    }
+
+    .footer_card_title {
+        font-size: 30px;
+    }
+
+    .footer_card_text {
+        font-size: 20px;
+    }
+
+    .footer_card_sms,
+    .footer_card_phone {
+        padding-top: 0px;
+        font-size: 16px;
+    }
+}
